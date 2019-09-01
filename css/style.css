@@ -1,0 +1,259 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(93, 93, 93);
+
+}
+button {
+  padding: 10px 25px;
+  background-color: rgb(208, 129, 143);
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(142, 141, 141);
+}
+h2 {
+  margin-bottom: 20px;
+}
+.container {
+  padding: 5% 10%;
+}
+.col {
+  padding: 2em 10%;
+}
+
+/* icon header */
+header{
+  text-align: center;
+}
+.icon {
+  padding: 40px 40px;
+  background-color: rgba(74, 73, 73, 0.96);
+}
+.icon h1 {
+  margin: auto;
+  color: rgb(235, 235, 235);
+}
+/* navigation */
+.navigation .row {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+.navigation a {
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+  background-color: rgba(235, 235, 235,0.95);
+}
+.navigation a:hover {
+  background-color: rgb(208, 129, 143);
+  color: rgb(235, 235, 235);
+}
+/* banner */
+.banner img{
+  height: 470px;
+  width: 100%;
+  object-fit: cover;
+}
+/* biodata */
+.biodata {
+  padding-bottom: 0;
+}
+.biodata h2{
+  color:rgb(38, 38, 38);
+  margin-bottom: 20px;
+}
+.biodata h3 {
+  color: rgb(208, 129, 143);
+  margin-bottom: 20px;
+}
+.biodata p {
+  margin-bottom: 20px;
+}
+.biodata img {
+  border-radius: 100%;
+  width: 100%;
+}
+.biodata article{
+  padding-top: 5%;
+}
+.profile {
+  margin-bottom: 20px;
+}
+.profile .col{
+  padding: 10px;
+}
+.profile .fas , .profile .far{
+  margin-right: 5px;
+}
+.profile .row{
+  display: grid;
+  grid-template-columns: 35% 5% 60%;
+}
+
+/* modal */
+.modal-box{
+  height: 100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 1500;
+  top:0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content {
+  width: 70%;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+input{
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(226, 226, 226, 0.51);
+}
+form {
+  margin-top: 30px;
+}
+.close-modal{
+  position: relative;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  float: right;
+  top:-20px;
+  right: -30px;
+  height: 0;
+}
+/* content */
+.content{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.content .col {
+  margin: 1em 0;
+  text-align: center;
+}
+.content .fas {
+  color: rgb(208, 129, 143);
+  margin-bottom: 20px;
+}
+.title-content{
+  font-size: 30px;
+  color:rgb(38, 38, 38);
+}
+/* footer */
+footer {
+  background-color: rgb(215, 215, 215);
+  padding-bottom: 0 !important;
+}
+footer li {
+  color: rgb(208, 129, 143);
+}
+footer span {
+  color: rgb(96, 96, 96);
+}
+.border-top {
+border-top: 1px solid rgb(73, 73, 73) !important;
+}
+.contact-link a {
+  margin: 0 5px;
+  color: rgb(73, 73, 73) ;
+}
+.box-shadow {
+  border-radius: 0.4em;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 666px) {
+  .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .content .col {
+    margin: 1em;
+  }
+  .profile .row{
+    grid-template-columns: 40% 5% 55%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* slider */
+  .banner img {
+    height: 792px;
+    object-fit: cover;
+  }
+  .modal-content {
+    width: 50%;
+  }
+}
+
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  header {
+    position: absolute;
+    z-index: 1000;
+  }
+  .icon {
+    padding-top: 60px;
+    position: absolute;
+    left: 20%;
+    }
+  .navigation {
+    position: relative;
+    left: 110%;
+    top: 70px;
+  }
+  .navigation a {
+    margin: 1px;
+    width: 150px;
+    padding-top: 40px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .about-us{
+    margin-top: 200px;
+  }
+  .modal-content {
+    width: 40%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .row{
+    grid-template-columns: repeat(3, auto);
+  }
+  .profile .row{
+    grid-template-columns: 15% 2% 33% 15% 2% 30%;
+  }
+  .icon {
+    left: 50%;
+    }
+  .navigation{
+    left: 160%;
+  }
+  .modal-content {
+    width: 30%;
+  }
+}

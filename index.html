@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <header>
+    <div class="nav icon">
+      <h1>PORTFOLIO</h1>
+    </div>
+    <div class="navigation">
+      <div class="row">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#biodata" class="nav-link">About</a>
+        <a href="#content" class="nav-link">Content</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="img/slide_img_1.jpeg">
+  </div>
+
+  <!-- content bioda -->
+  <div id="biodata" class="biodata container">
+    <div class="row">
+      <div class="col">
+        <img src="img/foto_profile.png">
+      </div>
+      <article>
+        <h2 class="title-content">About Me</h2>
+        <h3>I'm newbie web Developer having 3rd Semester in UPN "Veteran" Yogyakarta</h3>
+        <p>Saya mahasiswa Sistem Informasi di Universitas Pembangunan Nasional "Veteran" Yogyakarta semester 3 dan juga seorang newbie Web Developer. Saya sedang belajar Web fundamental di Dicoding. Saya bekerja sebagai freelance frontend developer. Saya berharap setelah lulus perkuliahan saya bisa menjadi Web Developer Expert di Bidang PWA dan Frontend</p>
+        <div class="profile">
+          <div class="row">
+            <div class="col">
+              <i class="fas fa-map-marker-alt"></i> Address
+            </div>
+            <div class="col">
+              :
+            </div>
+            <div class="col">
+              Condong Catur, Yogyakarta
+            </div>
+            <div class="col">
+              <i class="far fa-calendar-alt"></i> Age
+            </div>
+            <div class="col">
+              :
+            </div>
+            <div class="col">
+              19
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <i class="fas fa-phone"></i> Phone
+            </div>
+            <div class="col">
+              :
+            </div>
+            <div class="col">
+              +62 82133882546
+            </div>
+            <div class="col">
+              <i class="fas fa-envelope"></i> E-mail
+            </div>
+            <div class="col">
+              :
+            </div>
+            <div class="col">
+              rizkyhh1999@gmail.com
+            </div>
+          </div>
+        </div>
+        <button type="button" onclick="modalShow()" name="button">Email Me</button>
+      </article>
+    </div>
+  </div>
+
+
+  <!-- modal -->
+  <div id="modal-box-email" class="modal-box">
+    <div class="modal-content">
+      <div class="close-modal" onclick="modalClose()">
+        +
+      </div>
+      <form action="https://formspree.io/rizkyhh1999@gmail.com" method="POST">
+        <span>Ask question in here</span>
+        <input type="text" class="input" name="name" placeholder="Your Name...">
+        <input type="email" class="input" name="_replyto" placeholder="Your Email...">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div id="content" class="content container">
+    <div class="row">
+      <div class="col box-shadow">
+        <i class="fas fa-laptop fa-5x"></i>
+        <h2 class="title-content">Skill</h2>
+        <span>Saya sedang kursus secara online di Dicoding, disini saya belajar dari web fundamental.</span>
+      </div>
+      <div class="col box-shadow">
+        <i class="fas fa-user-graduate fa-5x"></i>
+        <h2 class="title-content">Education</h2>
+        <span>Saya mahasiswa Sistem Informasi di Universitas Pembangunan Nasional "Veteran" Yogyakarta semester 3 dan juga seorang newbie Web Developer. </span>
+      </div>
+      <div class="col box-shadow">
+        <i class="fas fa-building fa-5x"></i>
+        <h2 class="title-content">Working</h2>
+        <span>Saya bekerja sebagai freelancer frontend developer. Saya berharap setelah lulus perkuliahan saya bisa menjadi Web Developer Expert di Bidang PWA dan Frontend</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+<footer class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="title-content">Overview</h2>
+      <span>Saya sedang belajar secara online di Dicoding, disini saya belajar dari javascript fundamental. Saya berharap setelah lulus perkuliahan saya bisa menjadi Web Developer Expert di Bidang PWA dan Frontend</span>
+      </div>
+    <div class="col">
+      <h2 class="title-content">Language Programing</h2>
+      <ul>
+        <li><span>Javascript</span></li>
+        <li><span>PHP</span></li>
+        <li><span>Java</span></li>
+        <li><span>C++</span></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2 class="title-content">Working</h2>
+      <span>DSC Lead UPN "Veteran" Yogyakarta</span>
+      <span>Battistrada Developer</span>
+    </div>
+  </div>
+  <div class="row border-top bottom-footer">
+    <div class="col contact-link">
+      <a href="https://www.instagram.com/rizky_haphap"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/rizki-mahfuddin-harahap-46111b14b/"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/rizkyharahap"><i class="fab fa-github fa-2x"></i></a>
+    </div>
+    <div class="col">
+      <span>Copyright (c) 2018 Copyright Holder All Rights Reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
